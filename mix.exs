@@ -1,4 +1,6 @@
 defmodule ExChess.MixProject do
+  @moduledoc false
+
   use Mix.Project
 
   def project do
@@ -11,9 +13,7 @@ defmodule ExChess.MixProject do
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application, do: [extra_applications: [:logger], mod: {ExChess.Application, []}]
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps, do: []
 end
